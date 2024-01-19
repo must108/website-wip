@@ -43,7 +43,7 @@ body {
 #vid {
   opacity: 0;
   visibility: visible;
-  display: block;
+  display: none;
 }
 
 #text {
