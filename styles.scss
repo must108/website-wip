@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+$bg: #333;
+$blue: #7BAFD4;
+
+body {
+    background-color: $bg;
+    color: white;
+}
+
+#all {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+#but {
+    border: none;
+    padding: 20px 35px;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: inherit;
+    color: white;
+    z-index: 2;
+    visibility: visible;
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+#vid1 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    visibility: visible;
+    position: absolute;
+}
+
+#vid {
+    visibility: visible;
+}

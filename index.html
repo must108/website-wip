@@ -5,8 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wip!</title>
     <link rel="icon" type="image/x-icon" href="icoflower.ico">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <video src="websitevid.mp4" type="video/mp4" width="600px" controls autoplay></video>
+    <div id="all">
+        <button onclick="showVid()" id="but">login</button>
+    </div>
+    <div id="vid1">
+        <video src="websitevid.mp4" id="vid" width="600px"></video>
+    </div>
+
+    <script>
+        function showVid(){
+            const vidContain = document.getElementById("vid1");
+            const video = document.getElementById("vid");
+            const all = document.getElementById("all");
+            const but = document.getElementById("but");
+            vidContain.style.zIndex = "5";
+            video.style.zIndex = "4";
+            but.style.zIndex = "-1";
+            but.style.opacity = "0";
+            video.play();
+        }
+    </script>
 </body>
 </html>
