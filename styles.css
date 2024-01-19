@@ -3,6 +3,7 @@ body {
   background-color: #333;
   color: white;
   font-family: "Inter", sans-serif;
+  overflow: hidden;
 }
 
 #all {
@@ -44,6 +45,7 @@ body {
   opacity: 0;
   visibility: visible;
   display: none;
+  width: 40vw;
 }
 
 #text {

@@ -7,6 +7,7 @@ body {
     background-color: $bg;
     color: white;    
     font-family: "Inter", sans-serif;
+    overflow: hidden;
 }
 
 #all {
@@ -48,7 +49,8 @@ body {
 #vid {
     opacity: 0;
     visibility: visible;
-    display: block;
+    display: none;
+    width: 40vw;
 }
 
 #text {
