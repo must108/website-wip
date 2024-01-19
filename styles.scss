@@ -5,7 +5,8 @@ $blue: #7BAFD4;
 
 body {
     background-color: $bg;
-    color: white;
+    color: white;    
+    font-family: "Inter", sans-serif;
 }
 
 #all {
@@ -22,8 +23,8 @@ body {
     border: none;
     padding: 20px 35px;
     font-size: 50px;
-    font-weight: bold;
     background-color: inherit;
+    font-weight: bold;
     color: white;
     z-index: 2;
     visibility: visible;
@@ -45,5 +46,19 @@ body {
 }
 
 #vid {
+    opacity: 0;
     visibility: visible;
+    display: block;
+}
+
+#text {
+    font-size: 50px;
+    font-weight: 100;
+    opacity : 0;
+    z-index: -2;
+    font-family: "Inter", sans-serif;
+    #state {
+        padding: 0;
+        margin: 0;
+    }
 }

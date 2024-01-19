@@ -10,23 +10,35 @@
 <body>
     <div id="all">
         <button onclick="showVid()" id="but">login</button>
-    </div>
-    <div id="vid1">
-        <video src="websitevid.mp4" id="vid" width="600px"></video>
+        <div id="vid1">
+            <video src="websitevid.mp4" id="vid" width="600px" class></video>
+        </div>
+        <div id="text">
+            <h4 id="state">work in progress!</h4>
+        </div>
     </div>
 
     <script>
+        const but = document.getElementById("but");
+        const video = document.getElementById("vid");
+
         function showVid(){
-            const vidContain = document.getElementById("vid1");
-            const video = document.getElementById("vid");
-            const all = document.getElementById("all");
-            const but = document.getElementById("but");
-            vidContain.style.zIndex = "5";
-            video.style.zIndex = "4";
             but.style.zIndex = "-1";
             but.style.opacity = "0";
+            video.style.opacity = "1";
             video.play();
         }
+
+        video.addEventListener("ended", e => {
+            video.style.opacity = "0";
+            video.style.zIndex = "0";
+            video.style.visibility = "none";
+            video.style.display = "none";
+            but.style.zIndex = "2";
+            but.style.opacity = "1";
+            but.textContent = "work in progress!"
+            but.onclick = "";
+        });
     </script>
 </body>
 </html>
